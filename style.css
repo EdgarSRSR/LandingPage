@@ -8,14 +8,10 @@ body {
     
 }
 
-.body{
-}
+
 
 ul {
     list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
     gap: 16px;
     
 }
@@ -33,30 +29,46 @@ a {
 }
 
 .header {
-    height: 72px;
     display: flex;
     align-items: baseline;
-    padding-left: 6em;
-    padding-right: 6em;
-    margin-bottom: 0em;
-    font-size: 24px;
-    gap: 10px
+    position: fixed;
+    width: 100%;
 
 }
 
+.header-logo{
+    margin-left: 24px;
+    font-size: 24px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 12px;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.links a {
+    display: block;
+}
+
 .intro {
-    margin-top: 0em;
-   
+
     padding-left: 6em;
     padding-right: 6em;
     margin-bottom: 0em;
     padding-bottom: 4em;
+    padding-top: 8em;
 
 }
 
 .introcontent {
     display: flex;
     flex: 1;
+
 }
 
 .introtext{
@@ -108,7 +120,7 @@ a {
     margin-left: auto;
 }
 
-button {
+.signup {
     padding: 18px;
     background-color: #3882F6;
     width: 150px;
@@ -196,55 +208,54 @@ button {
     color: black;
 }
 
-.action{
-    /**margin-top: 8em;
-    padding-left: 10em;
-    padding-right: 10em;
-    margin-bottom: 8em;
-    padding-bottom: 6em;
-    margin-left: 6em;
-    margin-right: 6em;**/
-    margin-bottom: 8em;
-    margin-top: 8em;
-    margin-left: 30em;
-    margin-right: 30em;
-    background-color: #3882F6;
-    border-radius: 12px;
+.action {
     display: flex;
     align-items: center;
+    background-color: #3882F6 ;
+    margin: 128px auto;
+    padding: 32px 48px;
+    max-width: 1100px;
+    border-radius: 12px;
+    border-color: none;
     justify-content: center;
-    width: 800px;
 }
 
 .actioncontent{
     display: flex;
-   padding-left: 10em;
-   padding-right: 10em;
-   margin-bottom: 4em;
-   
+}
 
+.actioncontent .text{
+    flex: 1;
+    text-align: left;
+    margin-right: 50px;
 }
 
 .actioncontent .title{
     color: white;
-    padding-top: 2em;
-    margin: 0px;
-    
-
+    margin: 3px 0px 0px 50px;
+    padding-bottom: 0;
 }
 
-.actioncontent .text{
+.actioncontent .notitle{
     color: #E5E7EB;
-    margin-top: none;
+    margin: 5px 30px 30px 50px;
+    padding-right: 24px;
 }
 
 .action button{
+    color: white;
+    height: 36px;
+    width: 128px;
+    border-radius: 12px;
+    background-color: #3882F6;
     border-style: solid;
     border-width: medium;
     border-color: white;
-    width: 150px;
-    margin: 100px;
-    margin-left: auto;
+    height: fit-content;
+    padding: 4px 24px;
+    margin: 24px auto;
+    font-size: 15px;
+ 
 
 }
 
